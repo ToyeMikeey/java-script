@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="grading.css">
+</head>
+
+<body>
+    <form action="">
+        <div class="frm">
+            <div class="details">
+                <div class="nam">
+                    <label for="fullNam">Full Name</label> <input type="text" id="fullNam">
+                </div>
+                <div class="nam">
+                    <label for="examNo"> Exam No</label><input type="text" id="examNo">
+                </div>
+            </div>
+            <div class="subjects">
+                <div class="nam">
+                    <label for="maths">Mathematics</label><input type="text" id="maths">
+                </div>
+                <div class="nam">
+                    <label for="engl">English Language</label><input type="text" id="engl">
+                </div>
+                <div class="nam">
+                    <label for="chem">Chemistry</label><input type="text" id="chem">
+                </div>
+                <div class="nam">
+                    <label for="physc">Physics</label><input type="text" id="physc">
+                </div>
+                <div class="nam">
+                    <label for="bio">Biology</label><input type="text" id="bio">
+                </div>
+                <div class="nam">
+                    <label for="crs">Religious Studies</label><input type="text" id="crs">
+                </div>
+            </div>
+        </div>
+    </form>
+    <button onclick="seeResults()">Calculate Result</button>
+    <div class="rslts">
+        <p id="resultMssg"></p>
+    </div>
+    <script src="grading.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(exam2.jpg);
+    background-size: cover;
+}
+
+.frm {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    padding: 20px;
+    z-index: 10;
+    background-color: rgba(208, 206, 206, 0.854);
+}
+
+.details,
+.subjects {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 400px;
+    padding: 20px;
+    /* Add padding for better spacing */
+}
+
+button {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: green;
+}
+
+input {
+    border-radius: 10px;
+    font-weight: 800;
+}
+
+#fullNam {
+    margin-left: 100px;
+}
+
+#examNo {
+    margin-left: 110px;
+}
+
+#maths {
+    margin-left: 90px;
+}
+
+#engl {
+    margin-left: 55px;
+}
+
+#chem {
+    margin-left: 105px;
+}
+
+#physc {
+    margin-left: 120px;
+}
+
+#bio {
+    margin-left: 115px;
+}
+
+#crs {
+    margin-left: 55px;
+}
+
+p {
+    font-size: 30px;
+    color: rgba(22, 89, 52, 0.781);
+    font-weight: bold;
+}
+
+.rslts {
+    border: 1px solid black;
+    background-color: rgba(208, 206, 206, 0.854);
+    width: 430px;
+    /* height: 100px; */
+}
+
+@media (max-width: 320px) {
+
+    .frm {
+        margin-top: 100px;
+        width: 100vw;
+    }
+
+    label {
+        margin-left: 25px;
+    }
+
+    #fullNam,
+    #engl,
+    #chem,
+    #crs {
+        margin-left: 30px;
+    }
+
+    #examNo {
+        margin-left: 40px;
+    }
+
+    #maths {
+        margin-left: 20px;
+    }
+
+    #physc {
+        margin-left: 45px;
+    }
+
+    #bio {
+        margin-left: 40px;
+    }
+
+    .rslts {
+        width: 100vw;
+    }
+
+}

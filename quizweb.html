@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quizweb.css">
+</head>
+
+<body>
+    <nav>
+        <img src="menu.png" alt="" class="menu-btn">
+        <div class="nav1">
+            <img src="exam.png" alt="Logo">
+            <a href="#" onclick="showHome()">WIZQUEST</a>
+        </div>
+        <div class="nav2">
+            <a href="#" onclick="showHome()">HOME</a>
+            <a href="#">ABOUT</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">SERVICES</a>
+                <div class="dropdown-content">
+                    <a href="#" onclick="showSignIn()">Take Test</a>
+                    <a href="#">Read Blog</a>
+                    <a href="#">Practice Quiz</a>
+                </div>
+            </div>
+            <a href="#">CONTACT US</a>
+        </div>
+        <div class="nav3">
+            <button onclick="showSignIn()">LOGIN</button>
+            <div class="search">
+                <input type="search" id="searchicon" placeholder="Search...">
+                <img src="loupe.png" alt="Search Icon">
+            </div>
+        </div>
+    </nav>
+
+    <div class="chatbot-container" id="chatbotContainer">
+        <div class="chatbot-header">
+            <p>Chat with us!</p>
+            <button onclick="closeChat()">x</button>
+        </div>
+        <div class="chatbot-body">
+            <p>Welcome! How can I assist you?</p>
+        </div>
+        <div class="chatbot-footer">
+            <input type="text" placeholder="Type a message...">
+            <button>Send</button>
+        </div>
+    </div>
+    <button class="chatbot-toggle" id="chatbotToggle" onclick="openChat()">HELP!</button>
+
+    <div class="body1" id="body1">
+        <h1>Exams and Quizzes from a new angle</h1>
+        <h2>Worry less! <br>If you want to explore multiple subjects in greater depth leading up to your final exam,
+            then you're on the right track. We offer in-depth studying of your preferred courses.</h2>
+        <div class="body1bttn">
+            <button id="signquiz" onclick="showSignUp()">Sign Up for WizQuest</button>
+            <button id="testcode" onclick="showSignIn()">I have my test code</button>
+        </div>
+    </div>
+
+    <div class="signin-form" id="signinForm" style="display: none;">
+        <h2>Sign In</h2>
+        <form onsubmit="showQuiz(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="organisation">Organisation:</label>
+            <input type="text" id="organisation" name="organisation" required>
+            <label for="test">Test:</label>
+            <select id="test" name="test">
+                <option value="ielts">IELTS</option>
+                <option value="sat">SAT</option>
+                <option value="jamb">JAMB</option>
+                <option value="aviation">AVIATION</option>
+            </select>
+            <label for="examNumber">Exam Number:</label>
+            <input type="text" id="examNumber" name="examNumber" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="quizSection" style="display: none;">
+        <div id="quizContainer"></div>
+        <div id="pagination"></div>
+        <div class="quizbuttons">
+            <div>Time Left: <span id="timer">15:00</span></div>
+            <button id="prevButton" onclick="prevPage()">Previous</button>
+            <button id="nextButton" onclick="nextPage()">Next</button>
+            <button onclick="submitQuiz()" id="submit-quiz">Submit</button>
+        </div>
+    </div>
+
+    <div id="quizResult""></div>
+
+
+
+    <div class=" signup-form" id="signupForm" style="display: none;">
+        <h2>Sign Up</h2>
+        <form onsubmit="return validateSignUpForm()">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <label for="nationality">Nationality:</label>
+            <input type="text" id="nationality" name="nationality" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Set Password:</label>
+            <input type="password" id="password" name="password" required>
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <p id="error-message">Passwords do not match.</p>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+    <script src="quizweb.js"></script>
+</body>
+
+</html>

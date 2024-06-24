@@ -1,0 +1,29 @@
+.gametable {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 300px;
+    width: 300px;
+}
+
+.divone {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#rstgame {
+    height: 40px;
+    width: 150px;
+    background-color: rgb(240, 131, 131);
+    border: 1px solid #000000;
+    border-radius: 40px;
+    font-size: 18px;
+}
+
+#rstgame:hover {
+    background-color: rgb(64, 216, 64);
+    color: #FFFFFF;
+}

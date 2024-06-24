@@ -1,0 +1,24 @@
+/* .con .list-display {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+margin-bottom: 10px;
+border: 1px solid #ccc;
+
+}
+
+.con {}
+
+.list-display {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    width: 300px;
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.close-button:hover {
+    background-color: red;
+}

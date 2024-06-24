@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scientific.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" id="display" class="display">
+        <div class="buttons3">
+            <button class="number" onclick="number('9')">CALC</button>
+            <button class="number" onclick="number('8')"></button>
+            <button class="number" id="rndbtn" onclick="number('7')">REPLAY</button>
+            <button class="number" onclick="number('7')"></button>
+            <button class="number" onclick="logValueInput()">Base</button>
+            <button class="number" onclick="absolute()">Abs</button>
+            <button class="number" onclick="powerof3()">^3</button>
+            <button class="number" onclick="powerofneg()">^-1</button>
+            <button class="number" onclick="startLogBase()">logx(y)</button>
+        </div>
+        <div class="buttons2">
+            <button class="number" onclick="number('9')">9</button>
+            <button class="number" onclick="squartt()">√</button>
+            <button class="number" onclick="powerof2()">^2</button>
+            <button class="number" onclick="number('7')">7</button>
+            <button class="number" onclick="logBase10()">log</button>
+            <button class="number" onclick="number('7')">ln</button>
+            <button class="number" onclick="number('7')">(-)</button>
+            <button class="number" onclick="number('7')">.,,,</button>
+            <button class="number" onclick="number('7')">hyp</button>
+            <button class="number" onclick="sine()">sin</button>
+            <button class="number" onclick="cose()">cos</button>
+            <button class="number" onclick="tane()">tan</button>
+            <button class="number" onclick="number('7')">RCL</button>
+            <button class="number" onclick="number('7')">ENG</button>
+            <button class="number" onclick="number('(')">(</button>
+            <button class="number" onclick="number(')')">)</button>
+            <button class="number" onclick="number('7')">7</button>
+            <button class="number" onclick="number('7')">M+</button>
+        </div>
+        <div class="buttons">
+            <button class="number" onclick="number('9')">9</button>
+            <button class="number" onclick="number('8')">8</button>
+            <button class="number" onclick="number('7')">7</button>
+            <button class="clear" onclick="delett()">DEL</button>
+            <button class="clear" onclick="delet()">AC</button>
+            <button class="number" onclick="number('6')">6</button>
+            <button class="number" onclick="number('5')">5</button>
+            <button class="number" onclick="number('4')">4</button>
+            <button class="operator" onclick="operator('*')">*</button>
+            <button class="operator" onclick="operator('/')">/</button>
+            <button class="number" onclick="number('3')">3</button>
+            <button class="number" onclick="number('2')">2</button>
+            <button class="number" onclick="number('1')">1</button>
+            <button class="operator" onclick="operator('+')">+</button>
+            <button class="operator" onclick="operator('-')">-</button>
+            <button class="number" onclick="number('0')">0</button>
+            <button class="decimal" onclick="number('.')">.</button>
+            <button class="decimal" onclick="expon('.')">EXP</button>
+            <button class="decimal" onclick="ansr('.')">Ans</button>
+            <button class="calculate" onclick="equall('=')">=</button>
+        </div>
+    </div>
+
+    <script src="scientific.js"></script>
+</body>
+
+</html>

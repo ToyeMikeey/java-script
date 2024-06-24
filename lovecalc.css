@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(lovee.jpeg);
+    background-size: cover;
+    align-items: center;
+}
+
+.contain {
+    border: 1px solid black;
+    width: 600px;
+    height: 400px;
+    margin: 100px 0 0 450px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    /* justify-content: center; */
+    text-align: center;
+    align-items: center;
+    padding-top: 10px;
+
+    img {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+h1 {
+    color: rgb(209, 149, 159);
+}
+
+.rsult {
+    border: 1px solid black;
+    width: 340px;
+    height: 100px;
+}
+
+button {
+    background-color: rgba(250, 205, 212, 0.424);
+}

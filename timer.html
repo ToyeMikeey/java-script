@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="timer.css">
+</head>
+
+<body>
+    <div class="selectorr" id="selectr">
+        <div class="hrscon">
+            <select id="hrs"></select>
+        </div>
+        <div class="minscon">
+            <select id="mins"></select>
+        </div>
+        <div class="secscon">
+            <select id="secs"></select>
+        </div>
+    </div>
+    <div class="countdown" id="countdown">
+        <p>
+            <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+        </p>
+    </div>
+    <div class="bttns">
+        <button onclick="startTimer()">START</button>
+        <button onclick="restartTimer()">End</button>
+    </div>
+    <script src="timer.js"></script>
+</body>
+
+</html>

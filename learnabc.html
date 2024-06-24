@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Website</title>
+    <link rel="stylesheet" href="learnabc.css">
+</head>
+
+<body>
+    <div class="gamestart" id="gamestart">
+        <img src="abcs.jpg" alt="" id="startimg">
+        <p id="startmssg">Learn Your Alphabets With Images</p>
+        <button id="startbttn" onclick="startGame()">Explore</button>
+    </div>
+
+    <div class="container" id="container">
+        <div class="content">
+
+            <h1 id="rsltDisp">aaa</h1>
+
+        </div>
+        <div class="navigation">
+            <button id="prevBtn" onclick="prevLetter()">Previous</button>
+            <button id="nextBtn" onclick="nextLetter()">Next</button>
+            <button id="restrt" onclick="restartGame()">Restart</button>
+            <button id="exit" onclick="exitGame()">Exit</button>
+        </div>
+    </div>
+
+    <script src="learnabc.js"></script>
+</body>
+
+</html>
