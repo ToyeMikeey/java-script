@@ -45,7 +45,7 @@ function showQuiz(event) {
     document.getElementById('signinForm').style.display = 'none';
     document.getElementById('quizSection').style.display = 'block';
     loadQuiz(0);
-    startTimer(); // Start the timer when quiz starts
+    startTimer(); 
 }
 
 
@@ -241,7 +241,7 @@ function submitQuiz() {
     calculateAndShowResult();
 }
 
-
+ 
 
 function calculateAndShowResult() {
     var score = 0;
@@ -263,3 +263,38 @@ function calculateAndShowResult() {
 
 
 
+// function calculateAndShowResult() {
+//     var score = 0;
+//     var resultDetails = '';
+
+//     for (var i = 0; i < questions.length; i++) {
+//         var question = questions[i];
+//         var selectedAnswer = question.answer !== null ? question.options[question.answer] : 'No answer';
+//         var correctAnswer = question.options[question.correctAnswer];
+//         var isCorrect = question.answer !== null && question.answer === question.correctAnswer;
+
+//         if (isCorrect) {
+//             score++;
+//         }
+
+//         resultDetails +=
+//             '<div>' +
+//             '<p>Your answer: ' + selectedAnswer + '</p>' +
+//             '<p style="color: ' + (isCorrect ? 'green' : 'red') + ';">Correct answer: ' + correctAnswer + '</p>' +
+//             '</div>';
+//     }
+
+//     var userName = document.getElementById('name').value;
+//     var examNo = document.getElementById('examNumber').value;
+//     var quizSection = document.getElementById('quizSection');
+//     quizSection.style.display = 'none';
+
+//     var quizResult = document.getElementById('quizResult');
+//     quizResult.style.display = 'flex';
+//     quizResult.style.flexDirection = "column"
+//     quizResult.innerHTML =
+//         '<p>Dear ' + userName + ', with exam number ' + examNo + ', you scored ' + score + ' out of ' + questions.length + '</p>';
+//     var resultDetailsContainer = document.createElement('div');
+//     resultDetailsContainer.innerHTML = resultDetails;
+//     quizResult.appendChild(resultDetailsContainer);
+// }

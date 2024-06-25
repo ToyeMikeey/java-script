@@ -367,14 +367,21 @@ button:hover {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    margin-top: 60px;
+    padding-left: 300px;
+    margin-top: 200px;
+    /* border: 1px solid black; */
+    height: 500px;
 }
 
 #quizContainer {
     width: 80%;
     max-width: 800px;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
 }
+
 
 .question {
     margin-bottom: 20px;
@@ -391,7 +398,7 @@ button:hover {
 
 #pagination {
     display: flex;
-    margin-top: 20px;
+    margin-top: 50px;
     /* justify-content: center; */
 }
 
@@ -428,12 +435,15 @@ button:hover {
 }
 
 .quizbuttons {
-    margin-top: 20px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 130px;
 }
 
-#timer {
+#timersec {
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     color: red;
 }
 
